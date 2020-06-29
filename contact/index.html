@@ -17,10 +17,19 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>pingfan博客</title>
+  <title>留言板 - pingfan博客</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/blog/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -42,7 +51,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -154,7 +163,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/blog/img/people2.jpg') no-repeat center center;
+         style="background: url('/blog/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -167,10 +176,6 @@
           </div>
 
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
-          
         </div>
       </div>
     </div>
@@ -180,61 +185,16 @@
     
       <div class="container nopadding-md">
         <div class="py-5" id="board"
-          style=margin-top:0>
+          >
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/blog/2020/06/23/%E5%86%99%E4%BD%9C/">拥有自己的第一个博客</a>
-
-      <a href="/blog/2020/06/23/%E5%86%99%E4%BD%9C/" class="index-excerpt">
-        
-        
-          
-        
-        <div>前言
-            一时兴起，创此博客
-          
-
-2020年是个不可思议的一年，大二下学期在家上网课，刚开始颓废，尤其是数据库安排在周一和周三的第一节，在家从没早起我当然学不进去，就这样日子一天一天混过去了。好再后来又回去补自己缺少的知识，勉强凑合过了考试。暑假本来想着搭建个博客，不知不觉遇到了hexo+fluid主题，爱了。熬了两天终于把博客搭起来主题也搭好了，就剩后期修</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2020-06-23
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/blog/categories/%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/">成长之路</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/blog/tags/%E7%94%9F%E6%B4%BB/">生活</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
+<div class="page-content">
+  
+</div>
 
               </div>
             </div>
@@ -331,7 +291,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "发光不是太阳的权利，你也可以&nbsp;",
+        "留言板&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -345,6 +305,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
