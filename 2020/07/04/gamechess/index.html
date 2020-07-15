@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/pingfan443/img/favicon.png">
+  <link rel="icon" type="image/png" href="/pingfan443/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>五子棋 - pingfan博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/pingfan443/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atelier-estuary-dark.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/pingfan443/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/pingfan443/js/utils.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/pingfan443/">&nbsp;<strong>pingfan's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/pingfan443/contact/">
+                <i class="iconfont icon-contact-fill"></i>
+                留言板
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715162704.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-07-04 19:27">
+      2020年7月4日 晚上
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      46
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2020年7月15日 下午
+                
+              </p>
+            
+            <article class="markdown-body">
+              <h1 id="五子棋"><a href="#五子棋" class="headerlink" title="五子棋"></a>五子棋</h1><p>界面：</p>
+<img src="https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715155425.png" srcset="/pingfan443/img/loading.gif" style="zoom:50%;" />
+
+<h2 id="特色："><a href="#特色：" class="headerlink" title="特色："></a>特色：</h2><p>有八张棋盘图片和十张棋子图片供选择</p>
+<img src="https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715155921.png" srcset="/pingfan443/img/loading.gif" style="zoom: 50%;" />
+
+<p>排行榜的信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715160305.png" srcset="/pingfan443/img/loading.gif" alt=""></p>
+<h2 id="类名"><a href="#类名" class="headerlink" title="类名"></a>类名</h2><h3 id="Wymain-java"><a href="#Wymain-java" class="headerlink" title="Wymain.java"></a>Wymain.java</h3><blockquote>
+<p>棋盘的窗体，以及监听事件</p>
+</blockquote>
+<div class="hljs"><pre><code class="hljs java"><span class="hljs-keyword">package</span> game2;
+
+<span class="hljs-keyword">import</span> java.awt.event.ActionEvent;
+<span class="hljs-keyword">import</span> java.awt.event.ActionListener;
+<span class="hljs-keyword">import</span> java.util.Random;
+
+<span class="hljs-keyword">import</span> javax.swing.JFrame;
+<span class="hljs-keyword">import</span> javax.swing.JMenu;
+<span class="hljs-keyword">import</span> javax.swing.JMenuBar;
+<span class="hljs-keyword">import</span> javax.swing.JMenuItem;
+<span class="hljs-keyword">import</span> javax.swing.JOptionPane;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Wumain</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">JFrame</span></span>&#123;
+	<span class="hljs-comment">/**</span>
+<span class="hljs-comment">	 * </span>
+<span class="hljs-comment">	 */</span>	
+	pan p = <span class="hljs-keyword">null</span>;<span class="hljs-comment">//棋盘</span>
+	JMenuBar menuber = <span class="hljs-keyword">new</span> JMenuBar();<span class="hljs-comment">//菜单栏</span>
+	JMenu jm1 = <span class="hljs-keyword">new</span> JMenu(<span class="hljs-string">"选项"</span>);<span class="hljs-comment">//菜单</span>
+	JMenu jm2 = <span class="hljs-keyword">new</span> JMenu(<span class="hljs-string">"设置"</span>);
+	JMenu jm3 = <span class="hljs-keyword">new</span> JMenu(<span class="hljs-string">"帮助"</span>);
+	JMenuItem jm1_1 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">"重新开始"</span>);<span class="hljs-comment">//菜单项</span>
+	JMenuItem jm1_2 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">" 排行榜"</span>);
+	JMenuItem jm1_3 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">"退出游戏"</span>);
+	JMenuItem jm2_1 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">"更换棋盘"</span>);
+	JMenuItem jm2_2 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">"更换棋子"</span>);
+	JMenuItem jm3_1 = <span class="hljs-keyword">new</span> JMenuItem(<span class="hljs-string">"关于我们"</span>);
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Wumain</span><span class="hljs-params">()</span></span>
+<span class="hljs-function">	</span>&#123;
+		   p =<span class="hljs-keyword">new</span> pan();
+		   <span class="hljs-keyword">this</span>.setSize(<span class="hljs-number">585</span>,<span class="hljs-number">600</span>);<span class="hljs-comment">//设置窗体大小</span>
+		   <span class="hljs-keyword">this</span>.setLocation(<span class="hljs-number">200</span>,<span class="hljs-number">100</span>);<span class="hljs-comment">//设窗体位置</span>
+		   <span class="hljs-keyword">this</span>.add(p);<span class="hljs-comment">//默认添加到中间</span>
+		   <span class="hljs-keyword">this</span>.setResizable(<span class="hljs-keyword">false</span>);<span class="hljs-comment">//设置此窗体是否可由用户调整大小。</span>
+		   <span class="hljs-keyword">this</span>.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<span class="hljs-comment">// 设置用户在此窗体上发起 "close" 时默认执行的操作</span>
+		   jm1.add(jm1_1);
+		   jm1.add(jm1_2);
+		   jm1.add(jm1_3);
+		   jm2.add(jm2_1);
+		   jm2.add(jm2_2);
+		   jm3.add(jm3_1);
+		   menuber.add(jm1);
+		   menuber.add(jm2);
+		   menuber.add(jm3); 
+		   <span class="hljs-keyword">this</span>.setJMenuBar(menuber);<span class="hljs-comment">//设置此窗体的菜单栏。</span>
+		   <span class="hljs-keyword">this</span>.addMouseListener(p);<span class="hljs-comment">//给面板添加监听事件</span>
+		   jm1_1.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//重新开始的监听事件</span>
+				
+			<span class="hljs-meta">@Override</span>
+			<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;p.row;i++)&#123;
+					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">0</span>;j&lt;p.col;j++)&#123;
+						p.num[i][j] = <span class="hljs-number">0</span>;
+					&#125;
+				&#125;
+				p.canSetqizi = <span class="hljs-keyword">true</span>;
+				p.qizi_num = <span class="hljs-number">0</span>;
+				repaint();<span class="hljs-comment">//重绘此组件。</span>
+			&#125;
+		&#125;);
+		   jm1_2.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//排行榜监听事件</span>
+				
+			   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+			String msg =<span class="hljs-string">"排行榜\n"</span> +
+					<span class="hljs-string">"局数      步数      结果\n"</span>;
+			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;p.paihanglist.size();i++)
+			&#123;
+				paihangbang ph = p.paihanglist.get(i);
+			      msg = msg+<span class="hljs-string">"   "</span>+ph.getJushu()
+			    		  +<span class="hljs-string">"          "</span>+ph.getBushu()
+			    		  +<span class="hljs-string">"          "</span>+ph.getJieguo()+<span class="hljs-string">"\n"</span>;
+			&#125;
+				JOptionPane.showMessageDialog(<span class="hljs-keyword">null</span>, msg);<span class="hljs-comment">//显示消息</span>
+			   &#125;
+		&#125;);
+		   jm1_3.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//退出游戏菜单项的监听事件</span>
+<span class="hljs-comment">//			匿名虚构类</span>
+			<span class="hljs-meta">@Override</span>
+			<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+				System.exit(<span class="hljs-number">0</span>);<span class="hljs-comment">//退出即可</span>
+				
+			&#125;
+		&#125;);
+
+		   jm2_1.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//更换棋盘</span>
+			
+			<span class="hljs-meta">@Override</span>
+			<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+				Random r = <span class="hljs-keyword">new</span> Random();
+				<span class="hljs-keyword">int</span> n = r.nextInt(<span class="hljs-number">8</span>);<span class="hljs-comment">//产生[0,8)的随机数左闭右开</span>
+				String qipan_name = <span class="hljs-string">"qipan"</span>+n+<span class="hljs-string">".jpg"</span>;
+				p.qipan_name = qipan_name;
+				repaint();
+			&#125;
+		&#125;);
+		   jm2_2.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//更换棋子</span>
+			
+			<span class="hljs-meta">@Override</span>
+			<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+				Random r = <span class="hljs-keyword">new</span> Random();
+				<span class="hljs-keyword">int</span> n = r.nextInt(<span class="hljs-number">8</span>);<span class="hljs-comment">//产生[0,8)的随机数左闭右开</span>
+				String qizi1_name = <span class="hljs-string">"c"</span>+n+<span class="hljs-string">".png"</span>;<span class="hljs-comment">//产生的n是[0,8)的随机数</span>
+				String qizi2_name = <span class="hljs-string">"c"</span>+(n+<span class="hljs-number">1</span>)+<span class="hljs-string">".png"</span>;<span class="hljs-comment">//这里设置n+1一方面是避免两个</span>
+				<span class="hljs-comment">//棋子一样，另一方面棋子有8这个图片所以n=7时，会产生8这张图片，避免了8这张图片不存在的现象</span>
+				p.qizi1_name = qizi1_name;
+				p.qizi2_name = qizi2_name;	
+				repaint();
+			&#125;
+		&#125;);
+		   jm3_1.addActionListener(<span class="hljs-keyword">new</span> ActionListener() &#123;<span class="hljs-comment">//关于我们，这里就是简单的游戏介绍</span>
+			
+			<span class="hljs-meta">@Override</span>
+			<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">actionPerformed</span><span class="hljs-params">(ActionEvent e)</span> </span>&#123;
+				String msg =<span class="hljs-string">"关于我们\n"</span> +
+						<span class="hljs-string">"1、玩家先落子;\n"</span> +
+						<span class="hljs-string">"2、形成5颗同色连子即为赢;\n\n\n"</span> +
+						<span class="hljs-string">"     制作人：王豪杰"</span>;
+				JOptionPane.showMessageDialog(<span class="hljs-keyword">null</span>, msg);
+				
+			&#125;
+		&#125;);
+		   <span class="hljs-keyword">this</span>.setVisible(<span class="hljs-keyword">true</span>);<span class="hljs-comment">//显示该窗体，必须有这句话</span>
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;
+		Wumain w = <span class="hljs-keyword">new</span> Wumain();
+	&#125;
+&#125;</code></pre></div>
+
+
+
+<h3 id="pan-java"><a href="#pan-java" class="headerlink" title="pan.java"></a>pan.java</h3><blockquote>
+<p>棋盘的面板，该棋盘核心代码：当我方下够超过3个以上构成直线棋子，对方就会进行围堵。</p>
+</blockquote>
+<div class="hljs"><pre><code class="hljs java"><span class="hljs-keyword">package</span> game2;
+
+<span class="hljs-keyword">import</span> java.awt.Graphics;
+<span class="hljs-keyword">import</span> java.awt.Image;
+<span class="hljs-keyword">import</span> java.awt.event.MouseEvent;
+<span class="hljs-keyword">import</span> java.awt.event.MouseListener;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+<span class="hljs-keyword">import</span> java.util.Locale;
+<span class="hljs-keyword">import</span> java.util.Random;
+
+<span class="hljs-keyword">import</span> javax.swing.ImageIcon;
+<span class="hljs-keyword">import</span> javax.swing.JOptionPane;
+<span class="hljs-keyword">import</span> javax.swing.JPanel;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">pan</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">JPanel</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">MouseListener</span></span>&#123;
+	<span class="hljs-comment">/**</span>
+<span class="hljs-comment">	 * </span>
+<span class="hljs-comment">	 */</span>
+	<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>,j=<span class="hljs-number">0</span>;
+	<span class="hljs-keyword">int</span> row = <span class="hljs-number">15</span>;
+<span class="hljs-comment">//	数组下标</span>
+	<span class="hljs-keyword">int</span> col = <span class="hljs-number">15</span>;
+<span class="hljs-comment">//	数组上标</span>
+	String qipan_name = <span class="hljs-string">"qipan1.jpg"</span>;
+	String qizi1_name = <span class="hljs-string">"c1.png"</span>;
+	String qizi2_name = <span class="hljs-string">"c2.png"</span>;
+	<span class="hljs-keyword">int</span> num[][] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[row][col];
+<span class="hljs-comment">//	0：标示该位置为空，1：标示红棋子，2：标示黑棋子</span>
+	<span class="hljs-keyword">boolean</span> canSetqizi = <span class="hljs-keyword">true</span>;<span class="hljs-comment">//定义boolean值，用来判断该位置是否有子</span>
+	<span class="hljs-keyword">int</span> qizi_num = <span class="hljs-number">0</span>;<span class="hljs-comment">//	定义记录落子数</span>
+	List&lt;paihangbang&gt; paihanglist = <span class="hljs-keyword">new</span> ArrayList&lt;paihangbang&gt;();<span class="hljs-comment">//	定义集合，用来存储排行榜</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">paint</span><span class="hljs-params">(Graphics g)</span></span>&#123;<span class="hljs-comment">//在这个面板中绘制图案，在界面进行刷新时就会被调用。</span>
+		<span class="hljs-keyword">super</span>.paint(g);
+		Image img= <span class="hljs-keyword">new</span> ImageIcon(<span class="hljs-string">"img/"</span>+qipan_name).getImage();
+<span class="hljs-comment">//		调入棋盘图片，首先加载图片</span>
+		g.drawImage(img, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">567</span>, <span class="hljs-number">567</span>, <span class="hljs-keyword">this</span>);<span class="hljs-comment">// 绘制指定图像中已缩放到适合指定矩形内部的图像。</span>
+<span class="hljs-comment">//		绘制棋盘</span>
+		Image c1= <span class="hljs-keyword">new</span> ImageIcon(<span class="hljs-string">"img/"</span>+qizi1_name).getImage();<span class="hljs-comment">//getImage()方法：返回此图标的 Image。</span>
+		Image c2= <span class="hljs-keyword">new</span> ImageIcon(<span class="hljs-string">"img/"</span>+qizi2_name).getImage();
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i&lt;num.length;i++)&#123;
+			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;j&lt;num[i].length;j++)&#123;
+				<span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">1</span>)
+				&#123;
+					g.drawImage(c1, i*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, j*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">35</span>, <span class="hljs-keyword">this</span>);<span class="hljs-comment">//其实就是画个图片</span>
+					<span class="hljs-comment">//绘制指定图像中已缩放到适合指定矩形内部的图像。c1:棋子图案，然后是坐标，大小，和通知对象</span>
+				&#125;
+				<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">2</span>)
+				&#123;
+					g.drawImage(c2, i*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, j*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">35</span>, <span class="hljs-keyword">this</span>);
+				&#125;
+			&#125;
+<span class="hljs-comment">//			重绘棋子</span>
+		&#125;
+<span class="hljs-comment">//		重载整个界面（防止最小化后原内容丢失）</span>
+	&#125;
+	<span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] getLoc(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y) &#123;<span class="hljs-comment">//这个就是当你的棋子数在水平方向，竖直方向，或者斜方向的棋子数&gt;3,</span>
+		<span class="hljs-comment">//对方会判断有危险，就会堵你，这个就是核心所在</span>
+		<span class="hljs-keyword">int</span> count = <span class="hljs-number">1</span>;
+<span class="hljs-comment">//		定义计数器，用于计算棋子数</span>
+		<span class="hljs-keyword">int</span>[] wz1 = <span class="hljs-keyword">null</span>;
+		<span class="hljs-keyword">int</span>[] wz2 = <span class="hljs-keyword">null</span>;
+<span class="hljs-comment">//		定义数组，用来存储危险位置</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>;i--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][y] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">if</span>(num[i][y] == <span class="hljs-number">0</span>)&#123;
+					wz1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,y&#125;;
+<span class="hljs-comment">//					获取左边的危险位置坐标</span>
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>;i&lt;row;i++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][y] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">if</span>(num[i][y] == <span class="hljs-number">0</span>)&#123;
+					wz2 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,y&#125;;
+<span class="hljs-comment">//					获取右边位置危险坐标</span>
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">3</span>)
+		&#123;
+			<span class="hljs-keyword">if</span>(wz1 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz1;
+<span class="hljs-comment">//				判断返回左边危险位置</span>
+			&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(wz2 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz2;
+<span class="hljs-comment">//				判断返回右边危险位置</span>
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左右</span>
+		count = <span class="hljs-number">1</span>;
+		wz1 = <span class="hljs-keyword">null</span>;
+		wz2 = <span class="hljs-keyword">null</span>;
+<span class="hljs-comment">//		初始化所有参数</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j =y-<span class="hljs-number">1</span>;j&gt;=<span class="hljs-number">0</span>;j--)&#123;
+			<span class="hljs-keyword">if</span>(num[x][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">if</span>(num[x][j] == <span class="hljs-number">0</span>)&#123;
+					wz1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;x,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		上</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j =y+<span class="hljs-number">1</span>;j&lt;col;j++)&#123;
+			<span class="hljs-keyword">if</span>(num[x][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">if</span>(num[x][j] == <span class="hljs-number">0</span>)&#123;
+					wz2 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;x,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		下</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">3</span>)
+		&#123;
+			<span class="hljs-keyword">if</span>(wz1 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz1;
+			&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(wz2 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz2;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		上下</span>
+		count = <span class="hljs-number">1</span>;
+		wz1 = <span class="hljs-keyword">null</span>;
+		wz2 = <span class="hljs-keyword">null</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>,j =y-<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>&amp;&amp;j&gt;=<span class="hljs-number">0</span>;i--,j--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">0</span>)&#123;
+					wz1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左上</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>,j =y+<span class="hljs-number">1</span>;i&lt;row&amp;&amp;j&lt;col;i++,j++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">0</span>)&#123;
+					wz2 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右下</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">3</span>)
+		&#123;
+			<span class="hljs-keyword">if</span>(wz1 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz1;
+			&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(wz2 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz2;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左上右下</span>
+		count = <span class="hljs-number">1</span>;
+		wz1 = <span class="hljs-keyword">null</span>;
+		wz2 = <span class="hljs-keyword">null</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>,j =y+<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>&amp;&amp;j&lt;col;i--,j++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">0</span>)&#123;
+					wz1 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左下</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>,j =y-<span class="hljs-number">1</span>;i&lt;row&amp;&amp;j&gt;=<span class="hljs-number">0</span>;i++,j--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">if</span>(num[i][j] == <span class="hljs-number">0</span>)&#123;
+					wz2 = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]&#123;i,j&#125;;
+				&#125;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右上</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">3</span>)
+		&#123;
+			<span class="hljs-keyword">if</span>(wz1 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz1;
+			&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(wz2 != <span class="hljs-keyword">null</span>)&#123;
+				<span class="hljs-keyword">return</span> wz2;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左下右上</span>
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">iswin</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;<span class="hljs-comment">//判断是否赢</span>
+		<span class="hljs-keyword">int</span> count = <span class="hljs-number">1</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>;i--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][y] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>;i&lt;row;i++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][y] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">5</span>)
+		&#123;
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+		&#125;
+<span class="hljs-comment">//		左右</span>
+		count = <span class="hljs-number">1</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j =y-<span class="hljs-number">1</span>;j&gt;=<span class="hljs-number">0</span>;j--)&#123;
+			<span class="hljs-keyword">if</span>(num[x][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		上</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j =y+<span class="hljs-number">1</span>;j&lt;col;j++)&#123;
+			<span class="hljs-keyword">if</span>(num[x][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		下</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">5</span>)
+		&#123;
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+		&#125;
+<span class="hljs-comment">//		上下</span>
+		count = <span class="hljs-number">1</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>,j =y-<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>&amp;&amp;j&gt;=<span class="hljs-number">0</span>;i--,j--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左上</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>,j =y+<span class="hljs-number">1</span>;i&lt;row&amp;&amp;j&lt;col;i++,j++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右下</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">5</span>)
+		&#123;
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+		&#125;
+<span class="hljs-comment">//		左上右下</span>
+		count = <span class="hljs-number">1</span>;
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x-<span class="hljs-number">1</span>,j =y+<span class="hljs-number">1</span>;i&gt;=<span class="hljs-number">0</span>&amp;&amp;j&lt;col;i--,j++)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;
+			<span class="hljs-keyword">else</span>
+			&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		左下</span>
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =x+<span class="hljs-number">1</span>,j =y-<span class="hljs-number">1</span>;i&lt;row&amp;&amp;j&gt;=<span class="hljs-number">0</span>;i++,j--)&#123;
+			<span class="hljs-keyword">if</span>(num[i][j] == num[x][y])
+			&#123;
+				count++;
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				<span class="hljs-keyword">break</span>;
+			&#125;
+		&#125;
+<span class="hljs-comment">//		右上</span>
+		<span class="hljs-keyword">if</span>(count&gt;=<span class="hljs-number">5</span>)
+		&#123;			
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+		&#125;
+<span class="hljs-comment">//		左下右上</span>
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+	&#125;
+<span class="hljs-comment">//	判断输赢</span>
+	<span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mouseClicked</span><span class="hljs-params">(MouseEvent e)</span> </span>&#123;<span class="hljs-comment">// 鼠标按键在组件上单击（按下并释放）时调用</span>
+		<span class="hljs-keyword">if</span>(canSetqizi)&#123;
+			Graphics g = <span class="hljs-keyword">this</span>.getGraphics();<span class="hljs-comment">//为组件创建一个图形上下文。如果组件当前是不可显示的，则此方法返回 null。</span>
+			<span class="hljs-keyword">int</span> checkusersuccess = <span class="hljs-number">0</span>;<span class="hljs-comment">//标示是否落子成功</span>
+			<span class="hljs-keyword">int</span> x = e.getX();<span class="hljs-comment">//返回事件相对于源组件的水平 x 坐标。</span>
+			<span class="hljs-keyword">int</span> y = e.getY();<span class="hljs-comment">//返回事件相对于源组件的垂直 y 坐标。</span>
+<span class="hljs-comment">//			获取鼠标点击的位置</span>
+			Image c1= <span class="hljs-keyword">new</span> ImageIcon(<span class="hljs-string">"img/"</span>+qizi1_name).getImage();
+			<span class="hljs-keyword">int</span> i = (x-<span class="hljs-number">25</span>)/<span class="hljs-number">35</span>;<span class="hljs-comment">//减去行数多余的部分，/35就是获取的行数</span>
+			<span class="hljs-keyword">int</span> j = (y-<span class="hljs-number">75</span>)/<span class="hljs-number">35</span>;<span class="hljs-comment">//减去列数多余的部分，/35就是获取的列数</span>
+			<span class="hljs-comment">//i，j就是获取棋子的坐标</span>
+			<span class="hljs-keyword">if</span>(num[i][j] != <span class="hljs-number">0</span>)&#123;<span class="hljs-comment">//因为1代表红棋，2代表黑棋，所以!=0就是该位置已经存在棋，不能再下</span>
+	             JOptionPane.showMessageDialog(<span class="hljs-keyword">null</span>, <span class="hljs-string">"该位置有旗子，请重新落子"</span>);
+	             <span class="hljs-keyword">return</span>;
+<span class="hljs-comment">//	             判断有子，终止本次事件，进行下次事件触发</span>
+			&#125;<span class="hljs-keyword">else</span>&#123;
+				g.drawImage(c1, i*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, j*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">35</span>, <span class="hljs-keyword">this</span>);
+<span class="hljs-comment">//				画出玩家落子</span>
+				num[i][j] = <span class="hljs-number">1</span>;
+<span class="hljs-comment">//				给数组付一个只值，表示该位置有旗子</span>
+				checkusersuccess = <span class="hljs-number">1</span>;<span class="hljs-comment">//代表落子成功</span>
+<span class="hljs-comment">//				标示量标示</span>
+				qizi_num++;
+<span class="hljs-comment">//				记录玩家落子步数</span>
+			&#125;
+			<span class="hljs-keyword">boolean</span> b=iswin(i,j);
+			<span class="hljs-keyword">if</span>(b)&#123;
+				JOptionPane.showMessageDialog(<span class="hljs-keyword">null</span>, <span class="hljs-string">"你赢了！"</span>);
+				canSetqizi = <span class="hljs-keyword">false</span>;
+				paihangbang ph = <span class="hljs-keyword">new</span> paihangbang();
+				ph.setJushu(paihanglist.size()+<span class="hljs-number">1</span>);
+				ph.setBushu(qizi_num);<span class="hljs-comment">//棋子步数</span>
+				ph.setJieguo(<span class="hljs-string">"win"</span>);<span class="hljs-comment">//结果状态</span>
+				paihanglist.add(ph);
+				<span class="hljs-keyword">return</span>;
+			&#125;
+<span class="hljs-comment">//			调用boolean判断方法</span>
+			<span class="hljs-keyword">try</span> &#123;
+				Thread.sleep(<span class="hljs-number">1000</span>);
+			&#125; <span class="hljs-keyword">catch</span> (InterruptedException e1) &#123;
+				e1.printStackTrace();
+			&#125;
+<span class="hljs-comment">//			时间间隔：玩家落子后的等待</span>
+			Random r = <span class="hljs-keyword">new</span> Random();
+			Image c2 = <span class="hljs-keyword">new</span> ImageIcon(<span class="hljs-string">"img/"</span>+qizi2_name).getImage();
+<span class="hljs-comment">//			调入黑棋子图片</span>
+			<span class="hljs-keyword">do</span>&#123;
+				<span class="hljs-keyword">int</span>[] wz =getLoc(i, j);
+				<span class="hljs-keyword">if</span>(wz == <span class="hljs-keyword">null</span>)&#123;
+			i = r.nextInt(<span class="hljs-number">15</span>);
+			j = r.nextInt(<span class="hljs-number">15</span>);
+				&#125;<span class="hljs-keyword">else</span>&#123;
+					i=wz[<span class="hljs-number">0</span>];
+					j=wz[<span class="hljs-number">1</span>];
+				&#125;
+<span class="hljs-comment">//			设置随机的坐标</span>
+			&#125;<span class="hljs-keyword">while</span>(num[i][j] != <span class="hljs-number">0</span>);
+			g.drawImage(c2, i*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, j*<span class="hljs-number">35</span>+<span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">35</span>, <span class="hljs-keyword">this</span>);
+			num[i][j] = <span class="hljs-number">2</span>;
+			<span class="hljs-keyword">boolean</span> d=iswin(i,j);
+			<span class="hljs-keyword">if</span>(d)&#123;
+				JOptionPane.showMessageDialog(<span class="hljs-keyword">null</span>, <span class="hljs-string">"你输了！"</span>);
+				canSetqizi = <span class="hljs-keyword">false</span>;
+				paihangbang ph = <span class="hljs-keyword">new</span> paihangbang();
+				ph.setJushu(paihanglist.size()+<span class="hljs-number">1</span>);
+				ph.setBushu(qizi_num);
+				ph.setJieguo(<span class="hljs-string">"fail"</span>);
+				paihanglist.add(ph);
+				<span class="hljs-keyword">return</span>;
+			&#125;
+<span class="hljs-comment">//			随机电脑落子位置;	</span>
+		&#125;
+	&#125;
+
+	<span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mousePressed</span><span class="hljs-params">(MouseEvent e)</span> </span>&#123;<span class="hljs-comment">//鼠标按键在组件上按下时调用。</span>
+		<span class="hljs-comment">// TODO Auto-generated method stub</span>
+		
+	&#125;
+
+	<span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mouseReleased</span><span class="hljs-params">(MouseEvent e)</span> </span>&#123;<span class="hljs-comment">//鼠标按钮在组件上释放时调用。</span>
+		<span class="hljs-comment">// TODO Auto-generated method stub</span>
+		
+	&#125;
+
+	<span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mouseEntered</span><span class="hljs-params">(MouseEvent e)</span> </span>&#123;<span class="hljs-comment">//鼠标进入到组件上时调用。</span>
+		<span class="hljs-comment">// TODO Auto-generated method stub</span>
+		
+	&#125;
+
+	<span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">mouseExited</span><span class="hljs-params">(MouseEvent e)</span> </span>&#123;<span class="hljs-comment">// 鼠标离开组件时调用。</span>
+		<span class="hljs-comment">// TODO Auto-generated method stub</span>
+		
+	&#125;
+		
+&#125;</code></pre></div>
+
+
+
+<h3 id="paihangbang-java"><a href="#paihangbang-java" class="headerlink" title="paihangbang.java"></a>paihangbang.java</h3><blockquote>
+<p>封装了排行榜中的数据</p>
+</blockquote>
+<div class="hljs"><pre><code class="hljs java"><span class="hljs-keyword">package</span> game2;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">paihangbang</span> </span>&#123;
+	
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> jushu;
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> bushu;
+	<span class="hljs-keyword">private</span> String jieguo;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getJushu</span><span class="hljs-params">()</span> </span>&#123;
+		<span class="hljs-keyword">return</span> jushu;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setJushu</span><span class="hljs-params">(<span class="hljs-keyword">int</span> jushu)</span> </span>&#123;
+		<span class="hljs-keyword">if</span>(jushu&lt;<span class="hljs-number">1</span>)&#123;
+			<span class="hljs-keyword">this</span>.jushu = <span class="hljs-number">1</span>;
+		&#125;
+		<span class="hljs-keyword">this</span>.jushu = jushu;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getBushu</span><span class="hljs-params">()</span> </span>&#123;
+		<span class="hljs-keyword">return</span> bushu;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBushu</span><span class="hljs-params">(<span class="hljs-keyword">int</span> bushu)</span> </span>&#123;
+		<span class="hljs-keyword">this</span>.bushu = bushu;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getJieguo</span><span class="hljs-params">()</span> </span>&#123;
+		<span class="hljs-keyword">return</span> jieguo;
+	&#125;
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setJieguo</span><span class="hljs-params">(String jieguo)</span> </span>&#123;
+		<span class="hljs-keyword">this</span>.jieguo = jieguo;
+	&#125;
+&#125;</code></pre></div>
+
+<p>源码及其图片资源：</p>
+<div class="hljs"><pre><code class="hljs c++">链接：https:<span class="hljs-comment">//pan.baidu.com/s/1vr6koVFQUF83Hg5RLNPj7Q </span>
+提取码：<span class="hljs-number">2b</span>fy</code></pre></div>
+
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/pingfan443/categories/java/">java</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/pingfan443/tags/%E4%BA%94%E5%AD%90%E6%A3%8B%E6%B8%B8%E6%88%8F/">五子棋游戏</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <div class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "XbCwRxBY9w197lLAG8nbVtdj-gzGzoHsz",
+          app_key: "d0JKz5ejWYTRge73xRG02eCP",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "wavatar",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: true,
+          serverURLs: "https://xbcwrxby.lc-cn-n1-shared.com",
+        });
+      });
+    }
+    createObserver(loadValine, 'vcomments');
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <!-- <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> -->
+      <a rel="nofollow noopener"><span>pingfan</span></a>
+      <i class="iconfont icon-love" style="color: red;"></i>
+      <a rel="nofollow noopener">
+        <span>blog</span></a>
+      <!-- <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a> -->
+        <div>
+          <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279037970'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279037970%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+     
+    </div>
+    
+
+    
+
+    
+      <!-- cnzz Analytics Icon -->
+      <span id="cnzz_stat_icon_1279037970" style="display: none"></span>
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/pingfan443/js/debouncer.js" ></script>
+<script  src="/pingfan443/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/pingfan443/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/pingfan443/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+  
+<script src="/pingfan443/js/sakura.js"></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "五子棋&nbsp;",
+      ],
+      cursorChar: "",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+      icon: "§"
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/pingfan443/js/local-search.js" ></script>
+  <script>
+    var path = "/pingfan443/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <!-- cnzz Analytics -->
+    <script defer src="//s4.cnzz.com/z_stat.php?id=1279037970&show=pic"
+            type="text/javascript"></script>
+  
+
+
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+<!-- 动态标题 -->
+<script type="text/javascript">
+  var OriginTitile=document.title,st;
+  document.addEventListener("visibilitychange",function(){
+      document.hidden?(document.title="ヽ(●-`Д´-)ノ你喜欢我嘛？",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ喜欢哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+  })
+</script>
+<!-- 添加樱花效果 -->
+<script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+      document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+  }
+  </script>
+
+
+</body>
+</html>
