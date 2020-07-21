@@ -192,6 +192,60 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/07/15/hexo1/" target="_self">
+          <img src="https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715184608.png" srcset="/img/loading.gif" alt="hexo学习系列（一）">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/2020/07/15/hexo1/">hexo学习系列（一）</a>
+
+      <a href="/2020/07/15/hexo1/" class="index-excerpt">
+        
+        
+          
+        
+        <div>hexo官方网站
+搭建博客的准备工作
+下载node.js
+下载git
+
+安装直接一路就行了，最好找个教程看看，因为其中有一步选的不合试，还得自己配置环境变量，也有选项直接是帮你配置好的。看自己情况即可
+git安装教程：传送门
+如果发现git在cmd中输入git找不到命令是因为没有配置环境变量，需要自己配置环境静变量传送门
+另外这个其实也不需要一定要配置，也可以直接在git bash中直接运行即可。</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-07-15
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/hexo/">hexo</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">hexo搭建博客</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2020/07/04/gamechess/" target="_self">
           <img src="https://cdn.jsdelivr.net/gh/pingfan443/blog-imgs/imgs/20200715161436.jpg" srcset="/img/loading.gif" alt="五子棋">
         </a>
@@ -471,6 +525,29 @@ add_executable(prc1 practice/test1.cpp )就行了
   </div>
 </div>
   
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
+    });
+  }
+</script>
 
   
 

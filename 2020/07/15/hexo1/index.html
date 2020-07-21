@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>拥有自己的第一个博客 - pingfan博客</title>
+  <title>hexo学习系列（一） - pingfan博客</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -176,8 +176,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-06-23 21:32">
-      2020年6月23日 晚上
+    <time datetime="2020-07-15 18:36">
+      2020年7月15日 晚上
     </time>
   </div>
 
@@ -187,7 +187,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      434 字
+      1.3k 字
     </span>
   
 
@@ -197,7 +197,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      15
        分钟
     </span>
   
@@ -237,21 +237,101 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年6月28日 晚上
+                  本文最后更新于：2020年7月21日 晚上
                 
               </p>
             
             <article class="markdown-body">
-              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h1><div class="note note-primary">
-            <p>一时兴起，创此博客</p>
-          </div>
-<blockquote>
-<p>2020年是个不可思议的一年，大二下学期在家上网课，刚开始颓废，尤其是数据库安排在周一和周三的第一节，在家从没早起我当然学不进去，就这样日子一天一天混过去了。好再后来又回去补自己缺少的知识，勉强凑合过了考试。暑假本来想着搭建个博客，不知不觉遇到了hexo+fluid主题，爱了。熬了两天终于把博客搭起来主题也搭好了，就剩后期修修改改。</p>
-</blockquote>
-<h2 id="暑假生活"><a href="#暑假生活" class="headerlink" title="暑假生活 "></a>暑假生活 <span class="label label-primary">无聊</span></h2><p>本来是打算好好训练算法的，毕竟报名了蓝桥杯，前期也有一直训练，后来直接按着ACM去训练了，发现越练越难，在蓝桥的暴力大法好，到ACM只能优化在优化，生怕被卡。也不知道大学期间还能不能参加个ACM，毕竟也蛮追求荣誉的，希望和室友训练后能去拿个奖，别打铁就好（QAQ）</p>
-<h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><p>起初是在b站看讲师frank的视频小白搭建博客，学起来的，终于在一番错误之后把博客给简单框架搭起来了，但是毕竟只是个壳子，还需要去找主题，这里找到的Fluid蛮好看的，搭建过程一定多看用户手册！其实很多都在用户手册能够找到，后来也进去了微信群和一群大佬交流，发现自己是有多么的菜。</p>
-<h2 id="当代大学生状态"><a href="#当代大学生状态" class="headerlink" title="当代大学生状态"></a>当代大学生状态</h2><p>引入大佬的一句名言<code>忙的忙的要死，闲的闲的要死</code>。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>继续搭建把，持续更新</p>
+              <p><a href="https://hexo.bootcss.com/" target="_blank" rel="noopener">hexo官方网站</a></p>
+<h1 id="搭建博客的准备工作"><a href="#搭建博客的准备工作" class="headerlink" title="搭建博客的准备工作"></a>搭建博客的准备工作</h1><ol>
+<li>下载node.js</li>
+<li>下载git</li>
+</ol>
+<p>安装直接一路就行了，最好找个教程看看，因为其中有一步选的不合试，还得自己配置环境变量，也有选项直接是帮你配置好的。看自己情况即可</p>
+<p>git安装教程：<a href="https://blog.csdn.net/sanxd/article/details/82624127?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase" target="_blank" rel="noopener">传送门</a></p>
+<p>如果发现git在cmd中输入git找不到命令是因为没有配置环境变量，需要自己配置环境静变量<a href="https://www.cnblogs.com/-mrl/p/11246666.html" target="_blank" rel="noopener">传送门</a></p>
+<p>另外这个其实也不需要一定要配置，也可以直接在git bash中直接运行即可。</p>
+<h1 id="hexo搭建博客"><a href="#hexo搭建博客" class="headerlink" title="hexo搭建博客"></a>hexo搭建博客</h1><p>以上两个应用安装后，通过以下命令来测试：<br><code>node -v</code>        测试node版本，有版本信息即说明安装成功<br><code>git version</code>    测试git版本，同上<br>以上两步，如果是找不到命令，一般情况就是配置环境变量有问题或者说没有配置环境变量</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>以下是一键部署命令</p>
+<div class="hljs"><pre><code class="hljs c++">npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+hexo server</code></pre></div>
+
+<p>对上述命令进行分析：</p>
+<p>搭建hexo环境：<br>先在某盘(这里是E盘)下创建个文件夹Project</p>
+<p>打开cmd到Project目录下执行命令</p>
+<ol>
+<li><code>npm install hexo-cli -g</code></li>
+</ol>
+<p>安装hexo（cli就是命令行，接口，这里如果安装缓慢可以使用淘宝镜像源</p>
+<p><code>npm config set registry https://registry.npm.taobao.org</code>，然后在执行该命令）</p>
+<p>两种方式搭建hexo</p>
+<ol>
+<li><p>在project下新建一个blog文件夹然后打开blog执行<code>hexo init</code>就会创建hexo</p>
+</li>
+<li><p>在project下 执行 <code>hexo init blog</code> 同上述操作一样，但执行完后cmd要在blog目录下去执行其他命令</p>
+</li>
+</ol>
+<p><strong>说明</strong>：生成我们所需要的文件，这里可能会出错，err，然后我们可以进入到生成的文件，在运行 npm  install 把刚才没有装上的包再装一下，这里你会发现blog下有8个文件，如果没有，说明少安装了，可以通过npm cache clean –force  清理一下缓存再使用npm install 命令安装 成功安装8个文件即可</p>
+<p><strong>注意</strong>：以下命令在cmd中执行，当创建完blog文件夹时，所有命令都是在blog目录下执行</p>
+<ol start="2">
+<li><code>cd blog</code></li>
+<li><code>npm install</code></li>
+<li><code>hexo server</code></li>
+</ol>
+<p>s就是serve的意思，复制网址到浏览器即可在本地查看到一个静态网页  </p>
+<p>此时静态网页框架已经搭好：执行完hexo s（可以缩写）命令，复制网址在浏览器中打开即可看到网站。</p>
+<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><p>可以放到网上，一般静态网页直接放到github或者码云上，动态网页可去买服务器</p>
+<p>先去<a href="https://github.com/" target="_blank" rel="noopener">github</a>上注册,注册后想要上传到github上之前必须保证git操作连接到github,注册之后记得创建仓库，仓库名必须是&lt;github用户名&gt;.github.io</p>
+<p>在blog目录下执行：</p>
+<p><code>git config --global user.name &quot;github用户名&quot;</code></p>
+<p>引号里边是github的用户名</p>
+<p><code>git config --global user.email &quot;绑定的邮箱&quot;</code></p>
+<p>绑定github上的邮箱</p>
+<p>然后再github上点击setting是（注意不是仓库里的settings）</p>
+<p>找到ssh and gpg keys之后new ssh key</p>
+<h3 id="创建公钥的方法："><a href="#创建公钥的方法：" class="headerlink" title="创建公钥的方法："></a>创建公钥的方法：</h3><p>该目的是构建本地与github上的链接，基于ssh协议，详情请访问：<a href="https://blog.csdn.net/qq_43566782/article/details/107499258" target="_blank" rel="noopener">传送门</a></p>
+<p>在cmd或者git上输入</p>
+<p><code>ssh-keygen -t rsa -C &quot;注册的邮箱&quot;</code></p>
+<p><code>cat ~/.ssh/id_rsa.pub</code></p>
+<p>拷贝下来复制到github上</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>验证是否认证成功</p>
+<p>成功后，进入blog目录下找到_config.yml,这是博客的配置文件。用vscode或者文本编辑器打开修改(一定要注意空格)</p>
+<p>url：<code>http://&lt;用户名&gt;github.io/仓库名</code></p>
+<p>例如：<code>https://pingfan443.github.io/pingfan443.github.io</code></p>
+<p>root：/</p>
+<p>然后再最底下修改仓库</p>
+<p> repository: </p>
+<p>  github: <code>git@github.com:pingfan443/pingfan443.github.io.git</code></p>
+<p><code>此处用ssr协议</code></p>
+<p>最后在本地通过以下命令上传</p>
+<div class="hljs"><pre><code class="hljs c++"># Hexo会根据配置文件渲染出一套静态页面
+hexo g
+# 将上一步渲染出的一系列文件上传至至Github Pages
+hexo d
+# 也可以直接输入此命令，直接完成渲染和上传
+hexo g -d</code></pre></div>
+
+<h2 id="Github-pages"><a href="#Github-pages" class="headerlink" title="Github pages"></a>Github pages</h2><p>当你创建完第一个仓库后，点击右上角settings进去找到github pages source下选择master分支，然后把上述链接打开就能发现你自己的静态网页了，上述内容来自你master下所显示的内容</p>
+<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><ol>
+<li><code>hexo new &quot;post title&quot;</code></li>
+</ol>
+<p><strong>说明</strong>：hexo new 命令默认是生成博客文章，但是同样也可以生成草稿以及纯文件，生成的文章在source/_posts下</p>
+<p>引号里边是文章标题<br>然后通过vscode打开blog文件，找到source下的你写的那个标题”post title”可以在里边用markdown格式写一些东西，例如：(会md语法即可)</p>
+<div class="hljs"><pre><code class="hljs c++"># 标题一
+## 标题二
+### 标题<span class="hljs-number">3</span>
+*这是斜体*
+--这是横线--
+<span class="hljs-number">1.</span> 有序列表
+&gt; 引用</code></pre></div>
+
+<p>需要vscode的：<a href="https://www.bilibili.com/video/BV1W7411T7NZ" target="_blank" rel="noopener">vscode安装教程附带python安装环境</a></p>
+<p>总结：搭建的过程中遇到了很多问题，看了很多大佬的文章，以下推荐阅读</p>
+<p><a href="[https://yafine-blog.cn/posts/4ab2.html#1-1-Node-js%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE](https://yafine-blog.cn/posts/4ab2.html#1-1-Node-js的安装与配置)">Hexo+github 搭建博客 (超级详细版，精细入微)</a></p>
 
             </article>
             <hr>
@@ -261,7 +341,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/">成长之路</a>
+                      <a class="hover-with-bg" href="/categories/hexo/">hexo</a>
                     
                   </div>
                 
@@ -269,7 +349,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+                      <a class="hover-with-bg" href="/tags/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">hexo搭建博客</a>
                     
                   </div>
                 
@@ -282,15 +362,15 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/07/02/clion/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">clion解决多个源文件编译</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
+                    
+                      <a href="/2020/07/04/gamechess/">
+                        <span class="hidden-mobile">五子棋</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </div>
                 </div>
@@ -503,7 +583,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "拥有自己的第一个博客&nbsp;",
+        "hexo学习系列（一）&nbsp;",
       ],
       cursorChar: "",
       typeSpeed: 70,
